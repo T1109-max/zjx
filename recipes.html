@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>食谱 - 美食之旅</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">美食之旅</div>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="recipes.html" class="active">食谱</a>
+                <a href="about.html">关于我们</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="recipes-container">
+            <h1>精选食谱</h1>
+            <div class="recipe-grid">
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg" alt="意大利面">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/pasta_making.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>经典意大利面</h3>
+                        <p>制作时间: 30分钟</p>
+                        <p>难度: 简单</p>
+                        <button class="recipe-btn" data-recipe="pasta">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/299347/pexels-photo-299347.jpeg" alt="法式鹅肝酱">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/foiegras_prep.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>法式鹅肝酱</h3>
+                        <p>制作时间: 45分钟</p>
+                        <p>难度: 中等</p>
+                        <button class="recipe-btn" data-recipe="foiegras">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/2098085/pexels-photo-2098085.jpeg" alt="日式寿司">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/sushi_rolling.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>日式寿司</h3>
+                        <p>制作时间: 60分钟</p>
+                        <p>难度: 高级</p>
+                        <button class="recipe-btn" data-recipe="sushi">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/691114/pexels-photo-691114.jpeg" alt="麻婆豆腐">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/mapo_tofu.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>麻婆豆腐</h3>
+                        <p>制作时间: 25分钟</p>
+                        <p>难度: 中等</p>
+                        <button class="recipe-btn" data-recipe="mapo">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg" alt="泰式咖喱">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/thai_curry.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>泰式咖喱</h3>
+                        <p>制作时间: 40分钟</p>
+                        <p>难度: 中等</p>
+                        <button class="recipe-btn" data-recipe="curry">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/2673353/pexels-photo-2673353.jpeg" alt="韩式炸鸡">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/korean_chicken.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>韩式炸鸡</h3>
+                        <p>制作时间: 50分钟</p>
+                        <p>难度: 中等</p>
+                        <button class="recipe-btn" data-recipe="chicken">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/2347311/pexels-photo-2347311.jpeg" alt="北京烤鸭">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/peking_duck.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>北京烤鸭</h3>
+                        <p>制作时间: 120分钟</p>
+                        <p>难度: 高级</p>
+                        <button class="recipe-btn" data-recipe="duck">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg" alt="法式牛排">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/steak_cooking.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>法式牛排</h3>
+                        <p>制作时间: 35分钟</p>
+                        <p>难度: 中等</p>
+                        <button class="recipe-btn" data-recipe="steak">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/1527603/pexels-photo-1527603.jpeg" alt="海鲜意面">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/seafood_pasta.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>海鲜意面</h3>
+                        <p>制作时间: 45分钟</p>
+                        <p>难度: 中等</p>
+                        <button class="recipe-btn" data-recipe="seafood">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/2313686/pexels-photo-2313686.jpeg" alt="水煮鱼">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/fish_cooking.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>水煮鱼</h3>
+                        <p>制作时间: 40分钟</p>
+                        <p>难度: 中等</p>
+                        <button class="recipe-btn" data-recipe="fishsoup">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/2122294/pexels-photo-2122294.jpeg" alt="龙虾意面">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/lobster_pasta.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>龙虾意面</h3>
+                        <p>制作时间: 55分钟</p>
+                        <p>难度: 高级</p>
+                        <button class="recipe-btn" data-recipe="lobster">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/2664216/pexels-photo-2664216.jpeg" alt="法式焗蜗牛">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/escargot_prep.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>法式焗蜗牛</h3>
+                        <p>制作时间: 40分钟</p>
+                        <p>难度: 高级</p>
+                        <button class="recipe-btn" data-recipe="escargot">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/2664216/pexels-photo-2664216.jpeg" alt="日式拉面">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/ramen_making.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>日式拉面</h3>
+                        <p>制作时间: 180分钟</p>
+                        <p>难度: 高级</p>
+                        <button class="recipe-btn" data-recipe="ramen">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/2673353/pexels-photo-2673353.jpeg" alt="宫保鸡丁">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/kungpao_chicken.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>宫保鸡丁</h3>
+                        <p>制作时间: 35分钟</p>
+                        <p>难度: 中等</p>
+                        <button class="recipe-btn" data-recipe="kungpao">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/2871757/pexels-photo-2871757.jpeg" alt="墨西哥玉米卷">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/taco_assembly.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>墨西哥玉米卷</h3>
+                        <p>制作时间: 40分钟</p>
+                        <p>难度: 简单</p>
+                        <button class="recipe-btn" data-recipe="taco">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/1234535/pexels-photo-1234535.jpeg" alt="印度咖喱鸡">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/curry_chicken.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>印度咖喱鸡</h3>
+                        <p>制作时间: 50分钟</p>
+                        <p>难度: 中等</p>
+                        <button class="recipe-btn" data-recipe="curry_chicken">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/2280545/pexels-photo-2280545.jpeg" alt="希腊沙拉">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/greek_salad.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>希腊沙拉</h3>
+                        <p>制作时间: 20分钟</p>
+                        <p>难度: 简单</p>
+                        <button class="recipe-btn" data-recipe="greek_salad">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/2456435/pexels-photo-2456435.jpeg" alt="越南河粉">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/pho_cooking.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>越南河粉</h3>
+                        <p>制作时间: 120分钟</p>
+                        <p>难度: 中等</p>
+                        <button class="recipe-btn" data-recipe="pho">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/2087748/pexels-photo-2087748.jpeg" alt="西班牙海鲜饭">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/paella_making.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>西班牙海鲜饭</h3>
+                        <p>制作时间: 60分钟</p>
+                        <p>难度: 中等</p>
+                        <button class="recipe-btn" data-recipe="paella">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/2673353/pexels-photo-2673353.jpeg" alt="东坡肉">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/dongpo_pork.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>东坡肉</h3>
+                        <p>制作时间: 180分钟</p>
+                        <p>难度: 高级</p>
+                        <button class="recipe-btn" data-recipe="dongpo">查看详情</button>
+                    </div>
+                </div>
+                <div class="recipe-card">
+                    <div class="media-container">
+                        <img src="https://images.pexels.com/photos/2673353/pexels-photo-2673353.jpeg" alt="糖醋排骨">
+                        <video class="recipe-video" loop muted>
+                            <source src="videos/sweet_ribs.mp4" type="video/mp4">
+                        </video>
+                        <button class="play-btn">▶</button>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>糖醋排骨</h3>
+                        <p>制作时间: 45分钟</p>
+                        <p>难度: 中等</p>
+                        <button class="recipe-btn" data-recipe="sweetribs">查看详情</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-link">微信</a>
+            <a href="#" class="social-link">微博</a>
+            <a href="#" class="social-link">Instagram</a>
+        </div>
+        <p class="copyright">© 邹嘉瑄的作业. 保留所有权利.</p>
+    </footer>
+
+    <!-- 食谱详情弹窗 -->
+    <div class="recipe-modal" id="recipeModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">食谱详情</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="recipe-image">
+                    <img src="" alt="食谱图片" id="modalImage">
+                </div>
+                <div class="recipe-details">
+                    <h3 id="modalTitle"></h3>
+                    <div class="recipe-info">
+                        <p><strong>烹饪时间：</strong><span id="modalTime"></span></p>
+                        <p><strong>难度：</strong><span id="modalDifficulty"></span></p>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <h4>食材</h4>
+                        <ul id="modalIngredients"></ul>
+                    </div>
+                    <div class="recipe-steps">
+                        <h4>步骤</h4>
+                        <ol id="modalSteps"></ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

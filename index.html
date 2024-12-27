@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美食之旅</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JWT相关库 -->
+    <script src="https://cdn.jsdelivr.net/npm/jwt-encode@1.0.1/build/jwt-encode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+    
+    <!-- Fetch Polyfill (用于旧浏览器支持) -->
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js"></script>
+    
+    <!-- Promise Polyfill (用于旧浏览器支持) -->
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8.2.3/dist/polyfill.min.js"></script>
+    
+    <!-- 自定义API库 -->
+    <script src="js/zhipu-api.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">美食之旅</div>
+            <div class="nav-links">
+                <a href="index.html" class="active">首页</a>
+                <a href="recipes.html">食谱</a>
+                <a href="about.html">关于我们</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="main-content">
+                <h2>精选美食</h2>
+                <p>探索世界各地的美食文化，让您在家也能享受到米其林级别的美味。</p>
+                <!-- 更多内容 -->
+            </div>
+            <aside class="sidebar">
+                <h3>推荐食谱</h3>
+                <!-- 侧边栏内容 -->
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-link">微信</a>
+            <a href="#" class="social-link">微博</a>
+            <a href="#" class="social-link">Instagram</a>
+        </div>
+        <p class="copyright">© 邹嘉瑄的作业. 保留所有权利.</p>
+    </footer>
+
+    <!-- AI助手对话框 -->
+    <div class="chat-widget">
+        <button class="chat-toggle">
+            <span class="chat-icon">👨‍🍳</span>
+        </button>
+        <div class="chat-box">
+            <div class="chat-header">
+                <h3>美食助手</h3>
+                <button class="close-chat">×</button>
+            </div>
+            <div class="chat-messages">
+                <div class="message bot">
+                    <span class="avatar">👨‍🍳</span>
+                    <div class="message-content">
+                        您好！我是您的专业美食助手小厨。我精通中外料理，可以为您推荐美食、分享食谱和烹饪技巧。很高兴为您服务！
+                    </div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" placeholder="输入您的问题..." id="chat-input">
+                <button class="send-message">发送</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 食谱详情弹窗 -->
+    <div class="recipe-modal" id="recipeModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title">食谱详情</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="recipe-image">
+                    <img src="" alt="食谱图片" id="modalImage">
+                </div>
+                    <p><strong>烹饪时间：</strong><span id="modalTime"></span></p>
+                        <p><strong>难度：</strong><span id="modalDifficulty"></span></p>
+                    </div>
+                    <div class="recipe-ingredients">
+                        <h4>食材</h4>
+                        <ul id="modalIngredients"></ul>
+                    </div>
+                    <div class="recipe-steps">
+                        <h4>步骤</h4>
+                        <ol id="modalSteps"></ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>                 <div class="recipe-details">
+                    <h3 id="modalTitle"></h3>
+                    <div class="recipe-info">
+    

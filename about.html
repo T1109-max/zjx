@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>交互动画 - 美食之旅</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">美食之旅</div>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="recipes.html">食谱</a>
+                <a href="about.html" class="active">交互动画</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="about-container">
+            <div class="interactive-title">
+                <h1>交互动画</h1>
+                <div class="title-decoration">
+                    <span class="line"></span>
+                    <span class="dot"></span>
+                    <span class="line"></span>
+                </div>
+                <div class="title-hover-effect"></div>
+            </div>
+            <div class="kivicube-content">
+                <div class="image-container">
+                    <div class="kivicube-image">
+                        <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg" alt="KiviCube Logo">
+                    </div>
+                    <div class="kivicube-image">
+                        <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg" alt="Second Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="survey-section">
+                <h2>问卷调查</h2>
+                <form class="survey-form" id="surveyForm">
+                    <div class="form-group">
+                        <label for="name">您的姓名：</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">电子邮箱：</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>您最喜欢的菜系：</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="cuisine" value="chinese"> 中餐</label>
+                            <label><input type="checkbox" name="cuisine" value="western"> 西餐</label>
+                            <label><input type="checkbox" name="cuisine" value="japanese"> 日料</label>
+                            <label><input type="checkbox" name="cuisine" value="korean"> 韩餐</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="cooking-freq">您多久下厨一次？</label>
+                        <select id="cooking-freq" name="cooking-freq" required>
+                            <option value="">请选择</option>
+                            <option value="daily">每天</option>
+                            <option value="weekly">每周几次</option>
+                            <option value="monthly">每月几次</option>
+                            <option value="rarely">很少下厨</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback">您的建议：</label>
+                        <textarea id="feedback" name="feedback" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">提交问卷</button>
+                </form>
+                <div class="success-message" id="successMessage">
+                    <div class="success-icon">✓</div>
+                    <p>问卷提交成功！感谢您的参与。</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-link">微信</a>
+            <a href="#" class="social-link">微博</a>
+            <a href="#" class="social-link">Instagram</a>
+        </div>
+        <p class="copyright">© 邹嘉瑄的作业. 保留所有权利.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
